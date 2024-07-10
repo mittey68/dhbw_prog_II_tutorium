@@ -1,1 +1,1 @@
-# dhbw_prog_II_tutorium
+# Programmier Tutorium der Vorlesung Programmierung II der DHBW Ravensburg
