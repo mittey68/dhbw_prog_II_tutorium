@@ -1,20 +1,15 @@
-package uebungsaufgaben;
+package uebungsaufgaben.d32_comperators;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import model.Genre;
-import model.Movie;
-import model.Movie.MovieByPublishingYearDescendingComparator;
-import model.MovieByRatingDescendingComparator;
 
-/**
- * Komparatoren
- *
- * @author Daniel Appenmaier
- * @version 1.0
- *
- */
+import uebungsaufgaben.d32_comperators.Genre;
+import uebungsaufgaben.d32_comperators.Movie;
+import uebungsaufgaben.d32_comperators.MovieByRatingDescendingComparator;
+import uebungsaufgaben.d32_comperators.Movie.MovieByPublishingYearDescendingComparator;
+
+
 public class D32_Comparators {
 
   public static void main(String[] args) {
