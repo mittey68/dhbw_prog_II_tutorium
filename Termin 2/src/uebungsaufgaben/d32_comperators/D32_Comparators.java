@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import uebungsaufgaben.d32_comperators.Genre;
-import uebungsaufgaben.d32_comperators.Movie;
-import uebungsaufgaben.d32_comperators.MovieByRatingDescendingComparator;
 import uebungsaufgaben.d32_comperators.Movie.MovieByPublishingYearDescendingComparator;
 
 
