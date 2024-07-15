@@ -4,8 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import uebungsaufgaben.d32_comperators.Movie.MovieByPublishingYearDescendingComparator;
+import org.w3c.dom.Attr;
 
+/* 
+* Import der inneren Klasse MovieByRatingDescendingComparator. 
+* Hierbei wird der vollständige Pfad angegeben, da die Klasse in 
+* einer anderen Klasse definiert ist. 
+*/
+import uebungsaufgaben.d32_comperators.Movie.MovieByPublishingYearDescendingComparator;
 
 public class D32_Comparators {
 
@@ -32,6 +38,10 @@ public class D32_Comparators {
     movies.add(new Movie("The Super Mario Bros. Movie",
         List.of(Genre.ANIMATION, Genre.ADVENTURE, Genre.COMEDY), "2023", 92, 7.1, 161146));
 
+    /*
+     * Collections.sort() sortiert die Elemente einer Liste andhand der natürlichen
+     * Ordnung der Elemente.
+     */
     Collections.sort(numbers);
     Collections.sort(names);
     Collections.sort(movies);
@@ -49,12 +59,17 @@ public class D32_Comparators {
     }
     System.out.println();
 
+    /* Kommt aus der Klasse MovieByRatingDescendingComparator */
     Collections.sort(movies, new MovieByRatingDescendingComparator());
     for (Movie movie : movies) {
       System.out.println(movie);
     }
     System.out.println();
 
+    /*
+     * Kommt aus der inneren Klasse MovieByPublishingYearDescendingComparator, die
+     * in Movie enthalten ist
+     */
     Collections.sort(movies, new MovieByPublishingYearDescendingComparator());
     for (Movie movie : movies) {
       System.out.println(movie);

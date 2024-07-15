@@ -14,6 +14,17 @@ public class Main {
         rental.addVehicle(truck1);
         rental.addVehicle(car2);
 
+        /*
+         * Try-Catch-Block, um die InvalidValueException abzufangen. Try Catch ist das
+         * Pendant zu Throw. Während Throw den Fehler beim Auftreten einfach nur an die
+         * eins höhere Insanz weiterreicht, fängt der try catch Block sie ab und
+         * bestimmt, was passieren soll, falls die Exception auftritt. Das wird im
+         * Catch-Block programmiert. Throw wäre in der Main-Methode nicht möglich, da es
+         * keine höhere Instanz als diese gibt. Der Try Catch Block ist auch zwingend
+         * notwendig, da die Methode accelerate eine InvalidValueException wirft. Man
+         * kann Exceptions in Java nicht einfach "ignorieren", sondern muss sie entweder
+         * abfangen oder weiterreichen.
+         */
         try {
             car1.accelerate(50);
             truck1.accelerate(30);
