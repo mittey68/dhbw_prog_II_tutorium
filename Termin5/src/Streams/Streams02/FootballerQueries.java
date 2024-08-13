@@ -12,7 +12,7 @@ public class FootballerQueries {
 
   private ArrayList<Footballer> footballers;
 
-  public Queries(ArrayList<Footballer> footballers) {
+  public FootballerQueries(ArrayList<Footballer> footballers) {
     this.footballers = footballers;
   }
 
